@@ -61,7 +61,7 @@
                     
                     <li class="nav-list">
                             <a href="/site/login.php" class="nav-linki">
-                                <img src="/site/001-work-in-progress.png">
+                                REGISTRACIJA<img src="/site/001-work-in-progress.png">
                                 
                             </a>
                         </li>
@@ -106,12 +106,79 @@
                     <h1 class= "head">Registracija</h1>
                     <div class="registracija-container naslov">
                         
-                        <form method="post" >
-                            
-                            <input type="text" name="ime" placeholder="vpisite ime"  class="input" ></input>
+                        <form method="post" class="reg">
+                        <?php
+                        $imeErr="";
+                        $priimekErr="";
+                                        if(isset($_POST['reg'])){
+                                        $servername="localhost";
+                                        $username="root";
+                                        $password="";
+                                        $baza="baza";
+                                        
+                                        $reg= mysqli_connect($servername, $username, $password,$baza);
+                                        
+                                            
+                                       
+                                        if(!$reg)
+                                        {
+                                            die("povezava ni uspela");
+                                        }
+                                        
+                                        
+                                        
+                                        
+                                        $ime=$priimek=" ";
+                                        /*if(empty($_POST['ime']) && empty($_POST['priimek'])){
+                                            $imeErr="prosimo izpolnite vsa polja";
+
+                                        }
+                                        else{
+                                            mysqli_query($reg,"INSERT INTO uporabniki(ime)values('$_POST[ime]')");
+                                        }*/
+                                        if(empty($_POST['ime']))
+                                        {
+                                            $imeErr="Prosim vnesite ime";
+                                        
+                                            $i=false;
+                                        }
+                                        else {
+                                            $i=true;
+                                        }
+                                        if(empty($_POST['priimek'])){
+                                            $priimekErr="Prosim vnesite priimek";
+                                            $p=false;
+                                        }
+                                        else{
+                                            
+                                            $p=true;
+                                        }
+                                        if($i==true && $p==true){
+                                            mysqli_query($reg,"INSERT INTO uporabniki(ime,priimek)values('$_POST[ime]','$_POST[priimek]')");
+                                        }
+
+
+                                        /*vpis v db*/
+                                        
+                                        
+                                      
+                                       
+                                        mysqli_close($reg);
+                                    }
+                                        
+                                       
+                                     
+                                       
+                                        
+
+   
+                                    ?>
+                            <input type="text" name="ime" placeholder="vpisite ime"  class="input" >
+                            <span class="error"><?php print $imeErr;?></span>
                            
-                            <input type="text" name="priimek"  placeholder="vpisite priimek"  class="input"></input>
-                            <button name="reg" type="submit">Registracija</button>
+                            <input type="text" name="priimek"  placeholder="vpisite priimek"  class="input" ><span class="error"><?php print $priimekErr;?></span></input>
+                            
+                            <button name="reg" type="submit" class="button-reg">Registracija</button>
                         </form>
                         
                     </div>

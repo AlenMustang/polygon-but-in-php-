@@ -1,24 +1,14 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-
- <head>
-
- <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="/site/navigation.css">
+<head>
+    <link rel="stylesheet" href="/site/navigation.css">
     <link rel="stylesheet" href="/site/index.css">
-    <link rel="stylesheet" href="/site/section.css">
     <link rel="stylesheet" href="/site/footer.css">
-   
- </head>
- 
-
-
-  
-
-
-    <body>
-        <!--navigaton-->
-         <div class="navbar">
+    <link rel="stylesheet" href="/site/section.css">
+</head>
+<body>
+     <!--navigaton-->
+     <div class="navbar">
          <img src="icon-logo-web.png">   <a href="/site/index.php" class="navbar-logo nav-list">
                             POLYGONPC
                         </a>
@@ -59,8 +49,8 @@
                     </li>
 
                     <li class="nav-list">
-                            <a href="/site/login.php" class="nav-linki">
-                                REGISTRACIJA<img src="/site/001-work-in-progress.png">
+                            <a href="/site/login.php" class="nav-linki">REGISTRACIJA
+                                <img src="/site/001-work-in-progress.png">
                                 
                             </a>
                         </li>
@@ -73,203 +63,28 @@
 
 
             </div>
-     <!---section-->
             <div class="container-light">
-                          
-                
-            <div class="container-slant-dark">
-              
-             
-             
-             <div class="container-left">
-                
-                    <div class="container-content">
-                        
-                       <div class="naslov">
-                            <h1 class="head-dark">cpu</h1>
-                            <p class="text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum orci eros, pellentesque eget consectetur in, convallis a est. Duis ultricies maximus interdum. Donec mattis varius odio, vitae suscipit dolor tempor vel. Ut ultricies, libero at imperdiet luctus, justo nisi placerat lorem, at ornare magna purus non sem. Morbi dictum eleifend mi, sit amet egestas elit malesuada nec. Aenean id dui nec nibh vestibulum efficitur at eget turpis. Cras elementum nec metus sed scelerisque.</p>
-                            
-                        </div>
-
-                    </div>
-                </div>
-                
-                <div  class="container-right">
-                
-                    <div  class="container-content">
-
-                        
-                       
-                        
-                    </div>
-                </div>
-                
-                  
-              
-                
-            </div>
-            
-        </div>
-            
-        <!---section dark-->
-<!---section light-->
-<div class="container-light">
-                          
-                
-    <div class="container-slant-light">
-      
-     
-     
-     <div class="container-left">
-        
-            <div class="container-content">
-                
-               <div class="naslov">
-               <div class="slideshow-container ">
-                            <div class="slide fade ">
-                                <img src="/site/geforce-gtx-1080-ti-2c50-P@2x.png" alt="">
-                                
-                            </div>
-                            
-                            <div class="slide fade">
-                                <img src="/site/nvidia-consumer-store-portal-geforce-2080-ti-um@2x.png" alt="">
-                                
-                            </div>
-                            <div class="slide fade">
-                                <img src="/site/graphics-processing-unit-radeon-cards-video-adapters-computer-component-bus.jpg" alt="">
-                                
-                            </div>
-                     
-                        
-                       </div>
-                </div>
-                <script style="display: none;">
-                            let slideINT= 1;
-                            showSlide(slideINT);
-                            function showSlide(n){
-                                let i=0;
-                                let slide= document.getElementsByClassName("slide");
-                                
-                                while(i<slide.length){
-                                    slide[i].style.display="none";
-                                    i++;
-                                }
-                                slideINT++;
-                                if(slideINT>slide.length){
-                                    slideINT=1;
-                                }
-                                slide[slideINT-1].style.display="block"
-                                setTimeout(showSlide,4000);
-
-                            }
-
-                </script>
-            </div>
-        </div>
-        
-        <div  class="container-right">
-        
-            <div  class="container-content">
-
-               <div 
-               class="naslov">
-
-                    <h1 class= "head">gpu</h1>
-                    <p class=text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum orci eros, pellentesque eget consectetur in, convallis a est. Duis ultricies maximus interdum. Donec mattis varius odio, vitae suscipit dolor tempor vel. Ut ultricies, libero at imperdiet luctus, justo nisi placerat lorem, at ornare magna purus non sem. Morbi dictum eleifend mi, sit amet egestas elit malesuada nec. Aenean id dui nec nibh vestibulum efficitur at eget turpis. Cras elementum nec metus sed scelerisque.</p>
-                    
-                    
-                    
-                </div>
-
-            </div>
-        </div>
-        
-          
-      
-        
-    </div>
-    <div class="container-light">
                           
                 
                           <div class="container-slant-dark">
                             
                            
-                           
-                           <div class="container-left">
-                              
-                                  <div class="container-content">
-                                      
-                                     <div class="naslov">
-                                          <h1 class="head-dark">Naslov</h1>
-                                          <p class="text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum orci eros, pellentesque eget consectetur in, convallis a est. Duis ultricies maximus interdum. Donec mattis varius odio, vitae suscipit dolor tempor vel. Ut ultricies, libero at imperdiet luctus, justo nisi placerat lorem, at ornare magna purus non sem. Morbi dictum eleifend mi, sit amet egestas elit malesuada nec. Aenean id dui nec nibh vestibulum efficitur at eget turpis. Cras elementum nec metus sed scelerisque.</p>
-                                          
-                                      </div>
-              
-                                  </div>
-                              </div>
-                              
-                              <div  class="container-right">
-                              
-                                  <div  class="container-content">
-              
-                                      
-                                     
-                                      
-                                  </div>
-                              </div>
-                              
+                                <div class="img">
+                                    <div class="wrench-wrapp"><img src="/site/maintenance.png" class="wrench"></div>
+                                    
+                                    <div class="bar-border" >
+                                    <div class="bar-progress"></div>
+                                </div>
+                                
+                                </div>
                                 
                             
                               
                           </div>
                           
                       </div>
-</div>
-<div class="container-light">
-                          
-                
-    <div class="container-slant-light">
-      
-     
-     
-     <div class="container-left">
-        
-            <div class="container-content">
-                
-               <div class="naslov">
-                    <h1 class="head"></h1>
-                    <p class="text"></p>
-                    <img src="maintenance.png" class="image-undercon">
-                </div>
-
-            </div>
-        </div>
-        
-        <div  class="container-right">
-        
-            <div  class="container-content">
-
-               <div 
-               class="naslov">
-
-                    <h1 class= "head">Naslov</h1>
-                    <p class=text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum orci eros, pellentesque eget consectetur in, convallis a est. Duis ultricies maximus interdum. Donec mattis varius odio, vitae suscipit dolor tempor vel. Ut ultricies, libero at imperdiet luctus, justo nisi placerat lorem, at ornare magna purus non sem. Morbi dictum eleifend mi, sit amet egestas elit malesuada nec. Aenean id dui nec nibh vestibulum efficitur at eget turpis. Cras elementum nec metus sed scelerisque.</p>
-                    
-                    
-                    
-                </div>
-
-            </div>
-        </div>
-        
-          
-      
-        
-    </div>
-    
-</div>
-        <!--footer-->
-        <div>
+     <!--footer-->
+     <div>
             <div class="footer-container">
                                                                    
             
@@ -448,13 +263,5 @@
             </div>     
         </div>
        
-
-       
-
-    
-
-        
-    </body>
-    
-  
+</body>
 </html>

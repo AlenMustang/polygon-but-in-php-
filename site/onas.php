@@ -61,7 +61,7 @@
                     
                     <li class="nav-list">
                             <a href="/site/login.php" class="nav-linki">
-                                <img src="/site/001-work-in-progress.png">
+                                REGISTRACIJA<img src="/site/001-work-in-progress.png">
                                 
                             </a>
                         </li>

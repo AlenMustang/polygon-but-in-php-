@@ -10,13 +10,11 @@
     width: 50%;
     justify-content: left;
   }
-  video {
-    z-index: -1;
-  
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    position: absolute;
+  .naslov {
+    justify-content: left;
+    top: 0;
+    right: 0;
+    padding: 12%;
   }
   .card-container-display {
     display: grid;
@@ -34,9 +32,50 @@
     height: 80vh;
     width: 100%;
   }
-  button{
-    width: 50px;
-    height: 70px;
+ .bar-border{
+   
+   border: 1px  solid #fff !important;
+   width: 100%;
+   height: 50px;
+   display: block;
+   margin-top: 20px;
+   
+   
+ }
+ .bar-progress{
+  border: 2px solid red;
+  background-color: red;
+  height: 100%;
+  width: 15%;
+ }
+ .wrench-wrapp{
+  padding: 2rem;
+  text-align: center;
+ }
+  .wrench{
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(66deg) brightness(97%) contrast(99%);
+    height: 50%;
+    width: 50%;
+   
+  }
+  .img{
+    display: block;
+    margin: auto;
+    
+    margin-top: 20vh;
+  }
+  
+ 
+  .button-reg{
+     width: 100%;
+    padding: 5px;
+    margin-top: 25px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    height: 2rem;
+    background-color: #fff;
+    font-weight: bold;
   }
   .container-slant-dark {
     
@@ -50,19 +89,32 @@
     
     transform: scale(40%);
   }
-  
+  .error{
+    color: red;
+   
+  }
   .registracija-container{
     display: flex;
-    
-  
+    border: 2px solid #2d2d2d;
+    border-radius: 10px;
+    background-color: #2d2d2d;
+    box-shadow: 2px 2px 25px 5px #000;
+   
   }
- 
-  input[type=text]
-  {width: 100%;
+ .reg{margin: auto;
+  
+ }
+  .input[type=text]
+  { width: 100%;
+    background-color: #2d2d2d;
     padding: 12px 20px;
-    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    text-align: center;
 
   }
+
   form{display: block;
   padding: 5px;}
   .fade{
